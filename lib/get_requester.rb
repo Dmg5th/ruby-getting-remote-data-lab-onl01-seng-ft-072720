@@ -17,13 +17,14 @@ class GetRequester
     response.body
   end 
   
-  def parse_json 
+  def parse_json
+    programs = JSON.parse(self.get_response_body)
     
     
   end 
   
   
-  def program_school
+# def program_school
 # # we use the JSON library to parse the API response into nicely formatted JSON
 #   programs = JSON.parse(self.get_programs)
 #   programs.collect do |program|
